@@ -16,7 +16,8 @@ namespace BankingApp_202101
             accounts.Add(new BankAccount("DDB123456790", "Anna Kurnikova", 10000000, "RUB"));          
             accounts.Add(new BankAccount("DDB123456791", "Jenifer Lopez", 200, "USD"));
 
-            accounts[0].AddToBalance(-1000000);
+            accounts[0].AddToBalance(1000000, DateTime.Now, "Donation");
+            accounts[0].AddToBalance(2000, DateTime.Now, "Lecture");
 
             foreach (var account in accounts)
             {
